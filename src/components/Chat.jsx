@@ -18,7 +18,7 @@ const Chat = () => {
 
   const submitHandle = async (e) => {
     e.preventDefault();
-    const res = await chat('id1', msg);
+    const res = await chat(new Date().toString(), msg);
     setMessages([...messages, { sender: 'bot', msg: res.data.cnt }]);
     setMsg('');
   };
@@ -26,7 +26,9 @@ const Chat = () => {
     <Fragment>
       <div className='chat-box'>
         <header className='header'>
-          <h1>Chatterbot</h1>
+          <h1>
+            <i class='far fa-comments'></i> Chatterbot
+          </h1>
         </header>
         <ScrollToBottom className='messages'>
           {messages.length > 0 &&
@@ -53,6 +55,7 @@ const Chat = () => {
             onChange={(e) => changeHandle(e)}
             value={msg}
             className='input'
+            autoFocus
           />
           <button
             className='btn btn-submit'
@@ -60,7 +63,7 @@ const Chat = () => {
             disabled={msg === ''}
             onClick={(e) => clickHandle(e)}
           >
-            Send
+            <i class='fas fa-fighter-jet'></i>
           </button>
         </form>
       </div>
