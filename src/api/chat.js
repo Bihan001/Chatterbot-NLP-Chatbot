@@ -10,9 +10,11 @@ export const chat = async (id, msg) => {
     const res = await axios.get(
       `${cors_api}/http://api.brainshop.ai/get?bid=${bid}&key=${api_key}&uid=${id}&msg=${msg}`
     );
-    console.log(res);
     return res;
   } catch (err) {
     console.log(err.message);
+    return {
+      data: { cnt: 'Cannot connect to chatterbot. Try refreshing the page.' },
+    };
   }
 };

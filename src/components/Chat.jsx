@@ -32,10 +32,14 @@ const Chat = () => {
           {messages.length > 0 &&
             messages.map((message) => (
               <div
-                className={message.sender === 'bot' ? 'message-bot' : 'message-user'}
+                className={
+                  message.sender === 'bot' ? 'message-bot' : 'message-user'
+                }
                 key={cnt++}
               >
-                <div className={message.sender === 'bot' ? 'msg-bot' : 'msg-user'}>
+                <div
+                  className={message.sender === 'bot' ? 'msg-bot' : 'msg-user'}
+                >
                   <p>{message.msg}</p>
                 </div>
               </div>

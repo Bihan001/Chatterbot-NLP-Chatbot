@@ -41,15 +41,19 @@ body {
 }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgb(0, 105, 175), rgb(75, 164, 236));
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(0, 105, 175),
+    rgb(75, 164, 236)
+  );
   padding: 0 20px;
   color: #ffffff;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
-    Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   letter-spacing: 2px;
   font-weight: 100;
   border: 1px solid #cccccc;
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
 }
 
 .header h1 {
@@ -101,9 +105,13 @@ body {
 }
 
 .msg-bot {
-  background-image: linear-gradient(to right bottom, rgb(0, 105, 175), rgb(75, 164, 236));
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(0, 105, 175),
+    rgb(75, 164, 236)
+  );
   color: #ffffff;
-  box-shadow: 1rem 1.5rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 1rem 1.5rem 2rem rgba(0, 0, 0, 0.1);
   display: inline-block;
   margin: 10px;
   padding: 0 20px;
@@ -112,8 +120,12 @@ body {
 }
 
 .msg-user {
-  background-image: linear-gradient(to right bottom, rgb(190, 190, 190), rgb(193, 221, 243));
-  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(190, 190, 190),
+    rgb(193, 221, 243)
+  );
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1);
   display: inline-block;
   margin: 10px;
   padding: 0 20px;
